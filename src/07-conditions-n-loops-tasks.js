@@ -133,6 +133,7 @@ function doRectanglesOverlap(/* rect1, rect2 */) {
   throw new Error('Not implemented');
 }
 
+
 /**
  * Returns true, if point lies inside the circle, otherwise false.
  * Circle is an object of
@@ -162,7 +163,6 @@ function doRectanglesOverlap(/* rect1, rect2 */) {
 function isInsideCircle(/* circle, point */) {
   throw new Error('Not implemented');
 }
-
 
 /**
  * Returns the first non repeated char in the specified strings otherwise returns null.
