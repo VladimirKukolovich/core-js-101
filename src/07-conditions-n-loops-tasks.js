@@ -93,7 +93,6 @@ function getSumBetweenNumbers(n1, n2) {
  *   10,10,10 =>  true
  */
 function isTriangle(/* a, b, c */) {
-  // return Boolean((a + b) > c && (a + c) > b && (c + b) > a);
   throw new Error('Not implemented');
 }
 
@@ -130,9 +129,8 @@ function isTriangle(/* a, b, c */) {
  *   { top:20, left:20, width: 20, height: 20 }    =>  false
  *
  */
-function doRectanglesOverlap(rect1, rect2) {
-  return Boolean(rect1.left + rect1.width >= rect2.left && rect1.top + rect1.height >= rect2.top);
-  // throw new Error('Not implemented');
+function doRectanglesOverlap(/* rect1, rect2 */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -266,20 +264,6 @@ function reverseInteger(num) {
  *   4916123456789012 => false
  */
 function isCreditCardNumber(/* ccn */) {
-  // if (/[^0-9-\s]+/.test(ccn)) return false;
-  // let nCheck = 0;
-  // let bEven = false;
-  // ccn = String(ccn).replace(/\D/g, '');
-  // for (let n = ccn.length - 1; n >= 0; n--) {
-  //   const cDigit = ccn.charAt(n);
-  //   let nDigit = parseInt(cDigit, 10);
-  //   if (bEven) {
-  //     if ((nDigit *= 2) > 9) nDigit -= 9;
-  //   }
-  //   nCheck += nDigit;
-  //   bEven = !bEven;
-  // }
-  // return (nCheck % 10) === 0;
   throw new Error('Not implemented');
 }
 
