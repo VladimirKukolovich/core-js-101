@@ -311,6 +311,7 @@ function getDigitalRoot(/* num */) {
  *
  *
  *
+ *
  * @example:
  *   '' => true
  *   '[]'  => true
@@ -326,7 +327,6 @@ function getDigitalRoot(/* num */) {
 function isBracketsBalanced(/* str */) {
   throw new Error('Not implemented');
 }
-
 
 /**
  * Returns the string with n-ary (binary, ternary, etc, where n <= 10)
