@@ -310,6 +310,7 @@ function getDigitalRoot(/* num */) {
  *
  *
  *
+ *
  * @example:
  *   '' => true
  *   '[]'  => true
