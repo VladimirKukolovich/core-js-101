@@ -308,6 +308,7 @@ function getDigitalRoot(/* num */) {
  * @param {string} str
  * @return {boolean}
  *
+ *
  * @example:
  *   '' => true
  *   '[]'  => true
