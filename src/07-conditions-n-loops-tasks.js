@@ -278,7 +278,6 @@ function isCreditCardNumber(ccn) {
     bEven = !bEven;
   }
   return (nCheck % 10) === 0;
-  // throw new Error('Not implemented');
 }
 
 /**
