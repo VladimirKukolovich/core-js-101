@@ -160,8 +160,10 @@ function doRectanglesOverlap(rect1, rect2) {
  *   { center: { x:0, y:0 }, radius:10 },  { x:10, y:10 }   => false
  *
  */
-function isInsideCircle(/* circle, point */) {
-  throw new Error('Not implemented');
+function isInsideCircle(circle, point) {
+  const d = Math.sqrt((circle.center.x - point.x)*(circle.center.x - point.x)
+   + (circle.center.y - point.y)*(circle.center.y - point.y));
+  return d < circle.radius;
 }
 
 /**
@@ -294,8 +296,11 @@ function isCreditCardNumber(ccn) {
  *   10000 ( 1+0+0+0+0 = 1 ) => 1
  *   165536 (1+6+5+5+3+6 = 26,  2+6 = 8) => 8
  */
-function getDigitalRoot(/* num */) {
-  throw new Error('Not implemented');
+function getDigitalRoot(num) {
+  function sumDigits(numb) {
+    return String(numb).split('').reduce((acc, val) => acc = acc*1 + val*1);
+  }
+  return sumDigits(sumDigits(num));
 }
 
 
